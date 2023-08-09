@@ -29,7 +29,7 @@ public class CompanyMain {
 
         Iterator<Employee> iterator = listOfEmployees.iterator();
         while (iterator.hasNext()) { // iterator gidebildiği sürece
-            Employee employee = iterator.next();
+            Employee employee = iterator.next(); // listteki her bir eleman employee olsun.
             if (listOfUnique.containsKey(employee.getId())) {
                 listOfRepetition.add(employee);
                 iterator.remove();
